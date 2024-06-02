@@ -1,7 +1,6 @@
 # edgex
 ## how to run edgex natively
-1) Find the steps for downloading and building Edgex at https://docs.edgexfoundry.org/3.1/getting-started/native/Ch-BuildRunOnLinuxDistro/
-2) After building Edgex run the following export flags
+1）Run the following export flags
    ```
    export EDGEX_SECURITY_SECRET_STORE=false
    export EDGEX_CONFIG_PROVIDER=none
