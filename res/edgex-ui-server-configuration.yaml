@@ -1,0 +1,45 @@
+Writable:
+    LogLevel: INFO
+Service:
+    Host: 192.168.1.100
+    Port: 4000
+    ServerBindAddr: '192.168.1.100'
+    StartupMsg: edgex-ui-go service started
+    HealthCheckInterval: 10s
+    MaxRequestSize: 0
+    RequestTimeout: 5s
+Clients:
+    core-data:
+        Protocol: http
+        Host: 192.168.1.100
+        Port: 59880
+    core-metadata:
+        Protocol: http
+        Host: 192.168.1.100
+        Port: 59881
+    core-command:
+        Protocol: http
+        Host: 192.168.1.100
+        Port: 59882
+    support-notifications:
+        Protocol: http
+        Host: 192.168.1.100
+        Port: 59860
+    support-scheduler:
+        Protocol: http
+        Host: 192.168.1.100
+        Port: 59861
+    rules-engine:
+        Protocol: http
+        Host: 192.168.1.100
+        Port: 59720
+Registry:
+    Host: 192.168.1.100
+    Port: 8500
+    Type: consul
+    ConfigRegistryStem: edgex/
+    ServiceVersion: 'v3'
+APIGateway:
+    Server: 192.168.1.100
+    ApplicationPort: 8000
+    ApplicationPortSSL: 8443
